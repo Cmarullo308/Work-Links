@@ -320,6 +320,10 @@ namespace Work_Links {
         }
 
         private void lockedCheckBox_CheckedChanged(object sender, EventArgs e) {
+            if (switchingGroupOrIssue) {
+                return;
+            }
+
             currentIssue.locked = lockedCheckBox.Checked;
             updateIssueInfo();
             UnsavedData = true;

@@ -57,7 +57,6 @@
             // 
             this.pathTextBox.Location = new System.Drawing.Point(69, 38);
             this.pathTextBox.Name = "pathTextBox";
-            this.pathTextBox.ReadOnly = true;
             this.pathTextBox.Size = new System.Drawing.Size(355, 20);
             this.pathTextBox.TabIndex = 11;
             // 

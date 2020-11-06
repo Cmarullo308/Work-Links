@@ -45,5 +45,9 @@ namespace Work_Links.Windows {
                 saveButton.PerformClick();
             }
         }
+
+        private void cancelButton_Click(object sender, EventArgs e) {
+            Close();
+        }
     }
 }
