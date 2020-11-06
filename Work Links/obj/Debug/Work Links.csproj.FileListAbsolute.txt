@@ -1,0 +1,62 @@
+C:\Users\CJ\source\repos\Work Links\Work Links\bin\Debug\Work Links.exe.config
+C:\Users\CJ\source\repos\Work Links\Work Links\bin\Debug\Work Links.exe
+C:\Users\CJ\source\repos\Work Links\Work Links\bin\Debug\Work Links.pdb
+C:\Users\CJ\source\repos\Work Links\Work Links\obj\Debug\Work Links.csprojAssemblyReference.cache
+C:\Users\CJ\source\repos\Work Links\Work Links\obj\Debug\Work_Links.Properties.Resources.resources
+C:\Users\CJ\source\repos\Work Links\Work Links\obj\Debug\Work Links.csproj.GenerateResource.cache
+C:\Users\CJ\source\repos\Work Links\Work Links\obj\Debug\Work Links.csproj.CoreCompileInputs.cache
+C:\Users\CJ\source\repos\Work Links\Work Links\obj\Debug\Work Links.exe
+C:\Users\CJ\source\repos\Work Links\Work Links\obj\Debug\Work Links.pdb
+C:\Users\CJ\source\repos\Work Links\Work Links\obj\Debug\Work_Links.MainWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Work Links.exe.config
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Work Links.exe
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Work Links.pdb
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.dll
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Newtonsoft.Json.dll
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\bin\Debug\Newtonsoft.Json.xml
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.MainWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Properties.Resources.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.AboutWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.AddGroupWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.AddIssueWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.AddLinkWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.AreYouSureDialog.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.EditLinkWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.EditNameWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.SaveChangesWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work Links.csproj.GenerateResource.cache
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work Links.csproj.CoreCompileInputs.cache
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work Links.csproj.CopyComplete
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work Links.exe
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work Links.pdb
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work_Links.Windows.AlreadyAnInstanceWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work Links\Work Links\obj\Debug\Work Links.csprojAssemblyReference.cache
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Work Links.exe.config
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Work Links.exe
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Work Links.pdb
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.dll
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Newtonsoft.Json.dll
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Newtonsoft.Json.xml
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csprojAssemblyReference.cache
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.MainWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Properties.Resources.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.AboutWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.AddGroupWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.AddIssueWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.AddLinkWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.AlreadyAnInstanceWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.AreYouSureDialog.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.EditLinkWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.EditNameWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.SaveChangesWindow.resources
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csproj.GenerateResource.cache
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csproj.CoreCompileInputs.cache
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csproj.CopyComplete
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.exe
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.pdb

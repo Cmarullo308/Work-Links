@@ -1,0 +1,618 @@
+[
+  {
+    "Name": "Adobe Creative Cloud",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Accessing Adobe Creative Cloud",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\CUNY Guides & Cheat Sheets\\Accessing-AdobeCreativeCloud.pdf"
+          }
+        ],
+        "name": "Accessing creative cloud",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Baracuda",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Login URL",
+            "path": "https://spamfilter.brooklyn.cuny.edu/"
+          }
+        ],
+        "name": "Log in",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Blackboard",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Blackboard Ultra Cheat Sheet",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\CUNY Guides & Cheat Sheets\\Blackboard Ultra Cheat Sheet.pdf"
+          }
+        ],
+        "name": "Collaborate",
+        "textBoxText": "Log into blackboard\r\nClick class\r\nClick Tools\r\nClick \"Blackboard Collaborate Ultra\"",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Student Questions / Issues",
+        "textBoxText": "Transfer to x4868 (718.951.5342)\r\nor\r\nEmail: AITSUPPORT@brooklyn.cuny.edu",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Update Email",
+        "textBoxText": "- In the Home tab, find and click on the Update Email link in the Tools module.\n\n\r\n\r\n2- Enter the new Email twice.\n\n\r\n\r\n3- Click Submit.\n\nNOTE: This will not change the email address used in the CUNY Portal or any other CUNY system. It will only change the email used by Blackboard system.",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Class Info / Questions",
+    "issues": [
+      {
+        "links": [],
+        "name": "Questions about classes",
+        "textBoxText": "Need to contact registrar (718) 951-5212",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Class Roster",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Accessing Class Roster",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\CUNY Guides & Cheat Sheets\\CF - Accessing-Student-Roster-CUNY-Logins.pdf"
+          }
+        ],
+        "name": "Access class roster",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "COVID",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Campus Access Students",
+            "path": "http://www.brooklyn.cuny.edu/web/about/offices/environmental-safety/campus-reentry/access-for-students.php"
+          }
+        ],
+        "name": "Campus Access Student",
+        "textBoxText": "",
+        "locked": false
+      },
+      {
+        "links": [
+          {
+            "name": "Everbridge setup pdf",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Helpful_Links_and_information\\User-Instructions-for-Health-Screening-App.pdf"
+          }
+        ],
+        "name": "Everbridge Setup",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "CunyFirst / CUNY ID",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Activate ID",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Helpful_Links_and_information\\CUNYLogin_ActivateMyAccount.pdf"
+          }
+        ],
+        "name": "Activate ID",
+        "textBoxText": "",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Change Login Password",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Helpful_Links_and_information\\CUNYLogin_ChangeMyPassword.pdf"
+          }
+        ],
+        "name": "Change Cuny Login",
+        "textBoxText": "",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Change Email / Phone Number",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Mine\\How_To_Change_Address_Phone_Email_Contact.pdf"
+          }
+        ],
+        "name": "Change Email",
+        "textBoxText": "",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Get CunyID",
+        "textBoxText": "The email to login to CunyFirst",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "FAQ",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Helpful_Links_and_information\\CUNY First FAQ-converted.pdf"
+          }
+        ],
+        "name": "Other Issues",
+        "textBoxText": "",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Reset Password",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Mine\\ResettingForgottenPasswordGuide_003.pdf"
+          }
+        ],
+        "name": "Reset Password",
+        "textBoxText": "- Enter user ID OR Emplid\r\n\r\n- Answer security questions\r\n\r\n- Enter new password",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Upload Student Document",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Helpful_Links_and_information\\Upload-Student-Documents.pdf"
+          }
+        ],
+        "name": "Upload Document",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Device Requests",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Request Form",
+            "path": "http://www.brooklyn.edu/web/about/offices/studentaffairs/health-wellness/coronavirus/device-loan-requests.php"
+          }
+        ],
+        "name": "Device Request",
+        "textBoxText": "",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Other",
+        "textBoxText": "If they sent a laptop back, it must arrive before requesting another",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Update on laptop location",
+        "textBoxText": "email: devicerequest@brooklyn.cuny.edu",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Dropbox",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Website Login",
+            "path": "https://dropbox.cuny.edu/"
+          }
+        ],
+        "name": "Login",
+        "textBoxText": "Login: https://dropbox.cuny.edu/\r\n\r\nLogin with Cuny Credentials",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Email",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "BC Email",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Mine\\BC Student Email _ Brooklyn College.pdf"
+          }
+        ],
+        "name": "BCEmail",
+        "textBoxText": "How do I check my BC student email on the web?\r\n-Go to www.office.com and enter your email address and your CUNYfirst password. Select Outlook from the list of the programs.\r\n\r\nWhat is my email password?\r\n-Your email password is your CUNYfirst password. Use the login tools available at cuny.edu to manage your password.",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Email on Android",
+        "textBoxText": "Email\r\nPassword\r\n\r\ndomain: brooklyncollege\r\nserver: mail.brooklyn.cuny.edu\r\nport: 443",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Email on iPhone Setup",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Mine\\Exchange on iPhone.pdf"
+          }
+        ],
+        "name": "Email on iPhone",
+        "textBoxText": "",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Reset password",
+        "textBoxText": "Transfer to 6180",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Windows 10 setup",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Helpful_Links_and_information\\Setting up Outlook Profile on Windows 10.pdf"
+          }
+        ],
+        "name": "Setup outlook on Windows 10",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "EMPLID",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "WebCentral Login Link",
+            "path": "https://portal.brooklyn.edu/"
+          }
+        ],
+        "name": "Find EMPLID",
+        "textBoxText": "-Log into webcentral\r\n-Click \"My Info\"",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Extentions",
+    "issues": [
+      {
+        "links": [],
+        "name": "Andrey Gerasenkov",
+        "textBoxText": "8896",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Anil Lilly",
+        "textBoxText": "8894",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Christian Feliz",
+        "textBoxText": "8906",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Danny",
+        "textBoxText": "8897",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Diana Ferdman",
+        "textBoxText": "8895",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Hugh Hayling",
+        "textBoxText": "8893",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "John Stephen",
+        "textBoxText": "8913",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Kathy Samuel",
+        "textBoxText": "8892",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Kenny Julien",
+        "textBoxText": "8908",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Klleba Modeste",
+        "textBoxText": "8947",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Michelle Gibbons",
+        "textBoxText": "8891",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "NETWORKING",
+        "textBoxText": "6180",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Patricia Arnold",
+        "textBoxText": "8901",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Raymond Pattituci",
+        "textBoxText": "8910",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Rose Chen",
+        "textBoxText": "8899",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Selena Threet",
+        "textBoxText": "8914",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Steven Ortiz",
+        "textBoxText": "8909",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "MINE",
+    "issues": [
+      {
+        "links": [],
+        "name": "ACD",
+        "textBoxText": "146.245.216.46,146.245.216.50\r\n\r\nC Marullo 8966\r\n\r\nLog calls in Remote Support Agent Data.xlsx\r\n\r\nDWI for virtual desktop",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "SP350",
+        "textBoxText": "146.245.216.59  5060\r\n146.245.216.54  5060\r\n\r\nLogin: 8966\r\nPassword: 8966",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "VPN",
+        "textBoxText": "VPN\r\n\r\ncharles.marullo\r\nXfn97TcpA7NT\r\n\r\nPre-Shared Key: 2A58A57FA998BB1C\r\n\r\n146.245.9.251",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "WebCentral",
+        "textBoxText": "Cmarullo\r\nEggboybob94!",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Office 365",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Office.com",
+            "path": "www.Office.com"
+          }
+        ],
+        "name": "Download",
+        "textBoxText": "Sign in with CUNY Credentials",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Office apps on chromebook",
+            "path": "https://support.microsoft.com/en-us/office/how-to-install-and-run-microsoft-office-on-a-chromebook-32f14a23-2c1a-4579-b973-d4b1d78561ad#:~:text=How%20to%20install%20Office%20apps,Click%20Install"
+          }
+        ],
+        "name": "Office on Chromebook",
+        "textBoxText": "Open the Google Play Store and search for the apps you want to install.\r\n\r\nClick Install.\r\n\r\nOnce your app(s) are installed, click the Launcher on your Chromebook and click on the app to open it.\r\n\r\nSign in with your personal Microsoft Account or your account associated with your Microsoft 365 subscription. See Install and set up Office on an Android for details on how to sign in to Office on Android.",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Security Calendar",
+    "issues": [
+      {
+        "links": [],
+        "name": "Security Calendar",
+        "textBoxText": "transfer 6180",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Transcript",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Transcript Request Form",
+            "path": "https://www.credentials-inc.com/tplus/?ALUMTRO002687"
+          }
+        ],
+        "name": "Requesting Transcript",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Virtual Desktop",
+    "issues": [
+      {
+        "links": [],
+        "name": "Need VPN",
+        "textBoxText": "Brookyln college email and password",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "VDI.pdf",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\CUNY Guides & Cheat Sheets\\VDI.pdf"
+          }
+        ],
+        "name": "Setup VDI",
+        "textBoxText": "https://mysonicwall.com/muir/freedownloads",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Virtual Desktop Apps",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Virtual desktop and how to use",
+            "path": "https://www.cuny.edu/about/administration/offices/cis/virtual-desktop/"
+          }
+        ],
+        "name": "CUNY Virtual Desktop",
+        "textBoxText": "Apps\r\n- ArcGIS\r\n- ArcGis Pro\r\n- SPSS\r\n- SAS\r\n- Mathematica\r\n- Maplesoft\r\n- Matlab\r\n- Microsoft Access\r\n- R Studio\r\n\r\n\r\n1. Install it onto your computer, tablet or smartphone.\r\n\r\n2. Access your applications by clicking on one of the icons above.\r\n\r\n3. Log in using your CUNYfirst ID followed by @login.cuny.edu, and your CUNYfirst password.\r\n\r\n4. Save your data to a flash drive or local drive. Be sure to save your data before exiting the CUNY Virtual Desktop or your work will be lost. Print to any printer connected to your local device.\r\n\r\n5. For additional help, please see the FAQ’s, usage instructions, or call your local campus service desk.",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Web Building",
+    "issues": [
+      {
+        "links": [
+          {
+            "name": "Lab Access PDF",
+            "path": "G:\\User Files\\CJ\\My Files\\Work\\Brooklyn College Job\\Remote Work\\Calls\\Mine\\West End Building (WEB) Reopening Email to Campus.pdf"
+          }
+        ],
+        "name": "Computer Lab Access",
+        "textBoxText": "- Fill out fourm for access\r\n- Do Everbridge App (12 hours prior to all approved visit times)\r\n\r\nLab times in pdf\r\n\r\nFor questions or information on how to book an appointment, please email ITSLabManager@brooklyn.cuny.edu or\r\ncall the lab during the listed business hours at 718.951.5787",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "WebCentral",
+    "issues": [
+      {
+        "links": [],
+        "name": "Change Email for Notifications",
+        "textBoxText": "-Log into WebCentral\r\n-Click \"My Info\"\r\n-Click \"Change\" next to \"Personal Email\"",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "Create Account",
+        "textBoxText": "-Go to site (portal.brooklyn.edu)\r\n-Click \"Create an account\" at the top next to login",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Wifi",
+    "issues": [
+      {
+        "links": [],
+        "name": "No Home Wifi",
+        "textBoxText": "Request hotspot: devicerequest@brooklyn.cuny.edu",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Setup",
+            "path": "http://www.brooklyn.cuny.edu/web/academics/technology/wifi.php"
+          },
+          {
+            "name": "Get SecureW2",
+            "path": "https://websql.brooklyn.cuny.edu/proxy/securew2.jsp"
+          }
+        ],
+        "name": "Setup",
+        "textBoxText": "",
+        "locked": true
+      }
+    ]
+  },
+  {
+    "Name": "Zoom",
+    "issues": [
+      {
+        "links": [],
+        "name": "Desktop app login",
+        "textBoxText": "https://zoom.us/support/download\r\n\r\n-Click on sign in\r\n-Click \"Sign in with SSO\"\r\n-Type in \"Cuny\"\r\n-Log in with Cuny Credentials\r\n",
+        "locked": true
+      },
+      {
+        "links": [
+          {
+            "name": "Zoom Cuny Website",
+            "path": "https://cuny.zoom.us/"
+          }
+        ],
+        "name": "Login on website",
+        "textBoxText": "-Click Sign in\r\n-Login with Cuny Credentials",
+        "locked": true
+      },
+      {
+        "links": [],
+        "name": "No Account",
+        "textBoxText": "Email helpdesk requesting a Zoom account\r\n\r\nhelpdesk@brooklyn.cuny.edu",
+        "locked": true
+      }
+    ]
+  }
+]
