@@ -11,7 +11,7 @@ using Work_Links.Windows;
 namespace Work_Links {
     static class Program {
         public static MainWindow mainWindow;
-        public static string version = "1.0.1";
+        public static string version = "1.1";
 
         /// <summary>
         /// The main entry point for the application.

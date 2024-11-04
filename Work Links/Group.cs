@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 namespace Work_Links {
     public class Group : IComparable<Group> {
         public string Name;
+        public Guid idNumber { get; set; }
         public BindingList<Issue> issues = new BindingList<Issue>();
 
         public Group(string name) {
             this.Name = name;
+            idNumber = Guid.NewGuid();
         }
 
         public void addIssue(Issue issue) {

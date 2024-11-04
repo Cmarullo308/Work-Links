@@ -27,7 +27,7 @@ namespace Work_Links.Windows {
         }
 
         private void AreYouSureDialog_Load(object sender, EventArgs e) {
-
+            
         }
     }
 }

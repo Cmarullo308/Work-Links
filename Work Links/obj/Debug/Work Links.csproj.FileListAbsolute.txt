@@ -43,7 +43,6 @@ G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Newtonsoft.Jso
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.pdb
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\bin\Debug\Newtonsoft.Json.xml
-G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csprojAssemblyReference.cache
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.MainWindow.resources
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Properties.Resources.resources
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.AboutWindow.resources
@@ -60,3 +59,6 @@ G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csp
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csproj.CopyComplete
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.exe
 G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.pdb
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csproj.AssemblyReference.cache
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work Links.csproj.SuggestedBindingRedirects.cache
+G:\User Files\CJ\My Files\Code\C#\Work-Links\Work Links\obj\Debug\Work_Links.Windows.SearchWindow.resources

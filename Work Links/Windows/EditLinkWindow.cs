@@ -54,5 +54,17 @@ namespace Work_Links.Windows {
         private void cancelButton_Click(object sender, EventArgs e) {
             Close();
         }
+
+        private void nameTextBox_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                saveButton.PerformClick();
+            }
+        }
+
+        private void pathTextBox_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                saveButton.PerformClick();
+            }
+        }
     }
 }

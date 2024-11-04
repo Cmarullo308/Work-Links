@@ -8,12 +8,16 @@ using System.Threading.Tasks;
 namespace Work_Links {
     public class Issue : IComparable<Issue> {
         public string name { get; set; }
+        public List<string> tags { get; set; }
+        public Guid idNumber { get; set; }
         public string textBoxText { get; set; }
         public BindingList<Link> links = new BindingList<Link>();
         public bool locked { get; set; } = false;
 
-        public Issue(string name) {
+        public Issue(string name, List<String> tags) {
             this.name = name;
+            this.tags = tags;
+            idNumber = Guid.NewGuid();
         }
 
         public int CompareTo(Issue other) {

@@ -45,7 +45,7 @@
             this.newGroupNameLabel.Location = new System.Drawing.Point(12, 9);
             this.newGroupNameLabel.Name = "newGroupNameLabel";
             this.newGroupNameLabel.Size = new System.Drawing.Size(98, 20);
-            this.newGroupNameLabel.TabIndex = 1;
+            this.newGroupNameLabel.TabIndex = 3;
             this.newGroupNameLabel.Text = "Group name";
             // 
             // addButton
@@ -53,7 +53,7 @@
             this.addButton.Location = new System.Drawing.Point(116, 38);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
-            this.addButton.TabIndex = 2;
+            this.addButton.TabIndex = 1;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
@@ -63,7 +63,7 @@
             this.cancelButton.Location = new System.Drawing.Point(197, 38);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 3;
+            this.cancelButton.TabIndex = 2;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);

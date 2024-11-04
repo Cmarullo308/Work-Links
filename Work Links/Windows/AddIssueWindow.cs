@@ -21,6 +21,8 @@ namespace Work_Links.Windows {
             }
         }
 
+        public List<string> tags;
+
         public AddIssueWindow() {
             InitializeComponent();
         }
@@ -30,6 +32,14 @@ namespace Work_Links.Windows {
         }
 
         private void addButton_Click(object sender, EventArgs e) {
+            if (!String.IsNullOrWhiteSpace(tagsTextBox.Text)) {
+                tags = new List<string>(tagsTextBox.Text.Split(','));
+
+                for(int i = 0; i < tags.Count; i++) {
+                    tags[i] = tags[i].Trim();
+                }
+            }
+
             okPressed = true;
             Close();
         }
@@ -39,7 +49,13 @@ namespace Work_Links.Windows {
         }
 
         private void newIssueNameTextBox_KeyDown(object sender, KeyEventArgs e) {
-            if(e.KeyCode == Keys.Enter) {
+            if (e.KeyCode == Keys.Enter) {
+                addButton.PerformClick();
+            }
+        }
+
+        private void tagsTextBox_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
                 addButton.PerformClick();
             }
         }

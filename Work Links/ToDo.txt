@@ -1,1 +1,5 @@
 ﻿
+Drag second column width
+Make tags text box scrollable?
+
+-----------

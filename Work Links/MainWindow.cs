@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Work_Links.Windows;
+using static Microsoft.WindowsAPICodePack.Shell.PropertySystem.SystemProperties.System;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Work_Links {
     public partial class MainWindow : Form {
@@ -15,6 +19,12 @@ namespace Work_Links {
         private bool unsavedData = false;
         private bool StartupComplete = false;
         private bool switchingGroupOrIssue = false;
+        private bool filtered = false;
+        private bool currentlyFiltering = false;
+        private BindingList<Issue> filteredIssues = new BindingList<Issue>();
+        private SearchWindow searchWindow = new SearchWindow();
+
+
         public bool UnsavedData {
             get {
                 return unsavedData;
@@ -25,6 +35,17 @@ namespace Work_Links {
                     unsavedData = value;
                     unsavedDataChanged();
                 }
+            }
+        }
+
+        public bool Filtered {
+            get {
+                return filtered;
+            }
+
+            set {
+                filtered = value;
+                clearSearchButton.Visible = value;
             }
         }
 
@@ -54,10 +75,26 @@ namespace Work_Links {
             addGroupWindow.ShowDialog();
 
             if (addGroupWindow.okPressed) {
-                groupData.addGroup(new Group(addGroupWindow.NewGroupName));
+                Group newGroup = new Group(addGroupWindow.NewGroupName);
+                groupData.addGroup(newGroup);
                 UnsavedData = true;
                 groupData.sortGroups();
+
+                groupsListBox.SelectedIndex = getGroupIndexByIDNumber(newGroup.idNumber);
             }
+        }
+
+        private int getGroupIndexByIDNumber(Guid idNumber) {
+            BindingList<Group> groups = groupData.getGroups();
+
+            for (int i = 0; i < groups.Count; i++) {
+                if (groups[i].idNumber == idNumber) {
+                    groupsListBox.SelectedIndex = i;
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
         private void groupsListBox_SelectedIndexChanged(object sender, EventArgs e) {
@@ -67,11 +104,13 @@ namespace Work_Links {
 
             switchingGroupOrIssue = true;
 
+            clearSearches();
+
             if (currentIssue != null) {
                 currentIssue.textBoxText = issueTextBox.Text;
             }
 
-            //currentIssue = null;
+            searchTextBox.Clear();
 
             Group group = groupData.groupFromIndex(groupsListBox.SelectedIndex);
 
@@ -100,30 +139,71 @@ namespace Work_Links {
             addIssueWindow.ShowDialog();
 
             if (addIssueWindow.okPressed) {
-                group.addIssue(new Issue(addIssueWindow.NewIssueName));
+                Issue issue = new Issue(addIssueWindow.NewIssueName, addIssueWindow.tags);
+                group.addIssue(issue);
                 UnsavedData = true;
+                selectIssue(group, issue.idNumber);
+            }
+        }
+
+        private void selectIssue(Group group, Guid idNumber) {
+            if (filtered) {
+                for(int i = 0; i < filteredIssues.Count; i++) {
+                    if(filteredIssues.ElementAt(i).idNumber == idNumber) {
+                        issueListBox.SelectedIndex = i;
+                        return;
+                    }
+                }
+            } else {
+                for (int i = 0; i < group.issues.Count; i++) {
+                    if (group.issues.ElementAt(i).idNumber == idNumber) {
+                        issueListBox.SelectedIndex = i; //Here
+                        return;
+                    }
+                }
             }
         }
 
         private void issueListBox_SelectedIndexChanged(object sender, EventArgs e) {
-            switchingGroupOrIssue = true;
+            if (!Filtered) {
+                switchingGroupOrIssue = true;
 
-            if (currentIssue != null) {
-                currentIssue.textBoxText = issueTextBox.Text;
-            }
+                if (currentIssue != null) {
+                    currentIssue.textBoxText = issueTextBox.Text;
+                }
 
-            Group group = groupData.groupFromIndex(groupsListBox.SelectedIndex);
+                Group group = groupData.groupFromIndex(groupsListBox.SelectedIndex);
 
-            if (group != null && issueListBox.SelectedIndex >= 0) {
-                currentIssue = group.issues[issueListBox.SelectedIndex];
-                issueNameLabel.Visible = true;
+                if (group != null && issueListBox.SelectedIndex >= 0) {
+                    currentIssue = group.issues[issueListBox.SelectedIndex];
+                    issueNameLabel.Visible = true;
+                } else {
+                    currentIssue = null;
+                }
+
+                updateIssueInfo();
+
+                switchingGroupOrIssue = false;
             } else {
-                currentIssue = null;
+                switchingGroupOrIssue = true;
+
+                if (currentIssue != null) {
+                    currentIssue.textBoxText = issueTextBox.Text;
+                }
+
+                if (issueListBox.SelectedIndex >= 0) {
+                    currentIssue = filteredIssues[issueListBox.SelectedIndex];
+                    issueNameLabel.Visible = true;
+                } else {
+                    currentIssue = null;
+                }
+
+                updateIssueInfo();
+
+                switchingGroupOrIssue = false;
             }
 
-            updateIssueInfo();
-
-            switchingGroupOrIssue = false;
+            copiedLinkToClipboardLabel.Visible = false;
         }
 
         public void updateIssueInfo() {
@@ -152,7 +232,9 @@ namespace Work_Links {
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) {
-            UnsavedData = true;
+            if (!currentlyFiltering) {
+                UnsavedData = true;
+            }
         }
 
         private void addLinkButton_Click(object sender, EventArgs e) {
@@ -173,7 +255,12 @@ namespace Work_Links {
                 return;
             }
 
-            System.Diagnostics.Process.Start(currentIssue.links[index].path);
+            //Error messege if invalid or null link
+            try {
+                System.Diagnostics.Process.Start(currentIssue.links[index].path);
+            } catch (System.ComponentModel.Win32Exception) {
+                MessageBox.Show("Invalid or Null link", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -205,7 +292,7 @@ namespace Work_Links {
         }
 
         private void removeIssueButton_Click(object sender, EventArgs e) {
-            if(issueListBox.SelectedIndex < 0) {
+            if (issueListBox.SelectedIndex < 0) {
                 return;
             }
 
@@ -214,8 +301,27 @@ namespace Work_Links {
 
 
             if (areYouSureDialog.Choice == Choice.Yes) {
-                getSelectedGroup().issues.RemoveAt(issueListBox.SelectedIndex);
+                if (Filtered) {
+                    deleteIssueByIDNumber(getSelectedGroup(), filteredIssues.ElementAt(issueListBox.SelectedIndex).idNumber);
+                    filteredIssues.RemoveAt(issueListBox.SelectedIndex);
+                } else {
+                    getSelectedGroup().issues.RemoveAt(issueListBox.SelectedIndex);
+                }
+
+                int issueBoxSelectedIndex = issueListBox.SelectedIndex;
+                issueListBox.ClearSelected();
+                issueListBox.SelectedIndex = issueBoxSelectedIndex;
+
                 UnsavedData = true;
+            }
+        }
+
+        private void deleteIssueByIDNumber(Group group, Guid idNumber) {
+            for (int i = 0; i < group.issues.Count; i++) {
+                if (group.issues[i].idNumber == idNumber) {
+                    group.issues.RemoveAt(i);
+                    return;
+                }
             }
         }
 
@@ -262,16 +368,28 @@ namespace Work_Links {
             }
 
             Group group = getSelectedGroup();
-            Issue issue = group.issues[issueListBox.SelectedIndex];
+            Issue issue;
+
+            if (Filtered) {
+                issue = filteredIssues[issueListBox.SelectedIndex];
+            } else {
+                issue = group.issues[issueListBox.SelectedIndex];
+            }
 
             EditNameWindow editNameWindow = new EditNameWindow(issue);
             editNameWindow.ShowDialog();
 
             if (editNameWindow.saveButtonClicked) {
                 issue.name = editNameWindow.NewName;
+                issue.tags = editNameWindow.tags;
                 issueListBox.DataSource = null;
-                issueListBox.DataSource = getSelectedGroup().issues;
+                if (Filtered) {
+                    issueListBox.DataSource = filteredIssues;
+                } else {
+                    issueListBox.DataSource = getSelectedGroup().issues;
+                }
                 group.sortIssues();
+                selectIssue(group, issue.idNumber);
                 UnsavedData = true;
             }
         }
@@ -324,9 +442,109 @@ namespace Work_Links {
                 return;
             }
 
+            currentIssue.textBoxText = issueTextBox.Text;
             currentIssue.locked = lockedCheckBox.Checked;
             updateIssueInfo();
             UnsavedData = true;
+        }
+
+        private void searchButton_Click(object sender, EventArgs e) {
+            searchWindow.ShowDialog();
+            if (!searchWindow.isBlank()) {
+                searchTextBox.Enabled = false;
+                searchTextBox.Text = "(Advanced Search)";
+                Filtered = true;
+
+                doAdvancedSearch();
+                issueListBox.DataSource = filteredIssues;
+            } else {
+                issueListBox.DataSource = getSelectedGroup().issues;
+                clearSearches();
+            }
+        }
+
+        private void doAdvancedSearch() {
+            Group group = getSelectedGroup();
+
+            string nameToSearch = searchWindow.noteNameSearch.ToLower();
+            string contentsToSearch = searchWindow.noteContentsSearch.ToLower();
+
+            filteredIssues = new BindingList<Issue>(group.issues.Where(issue =>
+                issue.name.ToLower().Contains(nameToSearch) &&
+                issue.textBoxText.ToLower().Contains(contentsToSearch) &&
+                (!searchWindow.tags.Any() || issue.tags != null && (searchWindow.tags.All(tag => issue.tags.Contains(tag, StringComparer.OrdinalIgnoreCase))))
+            ).ToList());
+        }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e) {
+            if (!searchTextBox.Enabled) {
+                return;
+            }
+
+            string searchFor = searchTextBox.Text;
+            Group group = getSelectedGroup();
+
+            if (searchFor.Equals("")) {
+                Filtered = false;
+                issueListBox.DataSource = group.issues;
+                return;
+            }
+
+            filteredIssues.Clear();
+
+            currentlyFiltering = true;
+
+            foreach (Issue issue in group.issues) {
+                if (issue.name.ToLower().Contains(searchFor.ToLower())) {
+                    filteredIssues.Add(issue);
+                }
+            }
+
+            Filtered = true;
+            issueListBox.DataSource = filteredIssues;
+            if (issueListBox.SelectedIndex >= 0) {
+                currentIssue = filteredIssues[issueListBox.SelectedIndex];
+                updateIssueInfo();
+            }
+
+            currentlyFiltering = false;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyData == Keys.Enter) {
+
+            }
+        }
+
+        private void clearSearchButton_Click(object sender, EventArgs e) {
+            clearSearches();
+        }
+
+        private void clearSearches() {
+            Filtered = false;
+            issueListBox.DataSource = getSelectedGroup().issues;
+            searchTextBox.Clear();
+            searchTextBox.Enabled = true;
+            searchWindow.clearWindow();
+        }
+
+        private void copyToClipboardButton_Click(object sender, EventArgs e) {
+            int index = linksListBox.SelectedIndex;
+
+            if(index < 0) {
+                return;
+            }
+
+            System.Windows.Forms.Clipboard.SetText(currentIssue.links[index].path);
+            copiedLinkToClipboardLabel.Visible = true;
+        }
+
+        private void linksListBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
+
+        private void linksListBox_SelectedIndexChanged_1(object sender, EventArgs e) {
+            copiedLinkToClipboardLabel.Visible = false;
         }
     }
 }
